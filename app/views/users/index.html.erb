@@ -2,5 +2,6 @@
 <% @users.each do |user| %>
     <p>
         <%= user.name %>
+        <span><%= link_to '詳細', "/users/#{user.id}" %></span>
     </p>
 <% end %>
